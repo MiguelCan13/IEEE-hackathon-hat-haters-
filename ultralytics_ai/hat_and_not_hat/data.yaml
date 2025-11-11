@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['cap', 'head']
+
+roboflow:
+  workspace: ieee-project-uqyza
+  project: hat-and-no-hat-7p4bp
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ieee-project-uqyza/hat-and-no-hat-7p4bp/dataset/1
