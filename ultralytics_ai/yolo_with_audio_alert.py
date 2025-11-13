@@ -9,16 +9,16 @@ from audio_alert import AudioAlert
 import os
 
 # Configuration
-MODEL_PATH = "..\\runs\\detect\\train_with_5000_hats\\weights\\best.pt"
-ESP32_STREAM = "http://172.16.159.248:81/stream"  # "http://172.16.159.248:81/stream"
+MODEL_PATH = "..\\runs\\detect\\train_with_5000_hats_v2\\weights\\best.pt"
+ESP32_STREAM = 0  # "http://172.16.159.248:81/stream"
 ALERT_AUDIO = "ultralytics_ai\\alert.mp3"  # Replace with your MP3 file path
 
 # Detection thresholds
-CONFIDENCE_THRESHOLD = 0.4
+CONFIDENCE_THRESHOLD = 0.8
 MIN_DETECTIONS = 1  # Minimum number of hats to trigger alert
 
 # Initialize audio alert system (5 second cooldown between alerts)
-audio_alert = AudioAlert(cooldown_seconds=5)
+audio_alert = AudioAlert(cooldown_seconds=.5)
 
 def check_detection_conditions(results):
     """
