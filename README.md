@@ -146,6 +146,9 @@ python ultralytics_ai/wifi_hat_tracking_servo.py
 - ESP32, ESP32-CAM, and computer must all be on the **same WiFi network**
 - Ensure network allows device-to-device communication (not guest network)
 
+### AI TRAINED ###
+ - runs\detect\train_with_5000_hats_v2
+
 ## Team Members and Roles
 
 **Team: Hat Haters**
