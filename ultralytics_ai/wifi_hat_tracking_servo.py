@@ -25,7 +25,7 @@ ESP32_URL = f"http://{ESP32_IP}:{ESP32_PORT}/servo"
 
 # Audio alert settings
 ALERT_AUDIO = "ultralytics_ai\\alert.mp3"  # Your alert sound file
-ALERT_COOLDOWN = 5  # Seconds between alerts
+ALERT_COOLDOWN = 10  # Seconds between alerts
 
 # Detection settings
 CONFIDENCE_THRESHOLD = 0.5
